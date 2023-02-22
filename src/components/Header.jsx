@@ -2,7 +2,7 @@ import {Link} from 'react-scroll';
 
 const Header = () => {
   return (
-    <nav className=' flex justify-between align-center p-4 bg-gradient-rainblue rounded-lg'>
+    <nav className=' flex justify-between align-center p-4 bg-gradient-rainbow rounded-lg'>
         <span id='logo' className=' text-2xl text-bold'>
           <Link>PS</Link>
         </span>
