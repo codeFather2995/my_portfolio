@@ -9,8 +9,7 @@ import Works from './components/Works';
 import Contact from './components/Contact';
 
 const App = () => {
-
-  const [selectedPage,setSelectedPage] = useState('home');
+  const [selectedPage,setSelectedPage] = useState('Home');
   const [isTopOfPage,setIsTopOfPage] = useState(true);
   const isDesktop = useMediaQuery("(min-width: 1060px)");
 
@@ -19,7 +18,7 @@ const App = () => {
     const handleScroll = () => {
       if(window.scrollY === 0){
         setIsTopOfPage(true);
-        setSelectedPage('home');
+        setSelectedPage('Home');
       }
       if(window.scrollY !== 0) setIsTopOfPage(false);
     };
@@ -31,7 +30,6 @@ const App = () => {
   return (
     <div id='App' >
       <Header
-        selectedPage = {selectedPage}
         isTopOfPage = {isTopOfPage}
         setIsTopOfPage = {setIsTopOfPage} 
       />
