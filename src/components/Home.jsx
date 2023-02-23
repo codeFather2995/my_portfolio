@@ -4,7 +4,7 @@ import Typical from 'react-typical';
 
 const Home = () => {
   return (
-    <div id='Home' className=' flex justify-center align-center h-full w-full bg-gradient-rainbow rounded-md gap-5'>
+    <div id='Home' className=' flex justify-center align-center bg-gradient-rainbow  gap-5'>
       
       <div>
         <img 
@@ -15,20 +15,20 @@ const Home = () => {
       </div>
 
       <div className='mt-[200px]'>
-          <h1 className=' text-5xl text-white'>Sargis Petrosyan</h1>
-          <p className=' text-2xl mt-2'>I'm {' '}
+          <h1 className=' text-5xl text-opaque-black font-bold'>Sargis Petrosyan</h1>
+          <p className=' text-2xl mt-2 font-bold'>I'm {' '}
               <Typical
               loop={Infinity}
               wrapper='b'
               steps={[
                 "developer",
-                2500,
+                4000,
                 "range rover",
-                2500,
+                4000,
                 "alagyaz",
-                2500,
+                4000,
                 "santimetr",
-                2500,
+                4000,
               ]}
               />
           </p>
