@@ -11,7 +11,7 @@ module.exports = {
         coral: "rgb(255, 127, 80)",
         pink:"rgb(255, 218, 185)",
         peach: "rgb(255, 229, 180)",
-        orange:"rgb(255, 140, 0)",
+        blue: "rgb(45, 149, 253)",
         yellow: "rgb(255, 255, 0)",
         "dark-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.35)",
@@ -23,8 +23,11 @@ module.exports = {
         "gradient-about":
           "linear-gradient(to bottom, #ffffff, #e9e9ea, #d4d4d6, #bfbfc2, #aaabae, #949598, #7f7f82, #6b6a6d, #504f51, #373536, #1f1e1e, #000000)",
           
-          "gradient-rainbow1":
-          "linear-gradient(81.66deg, #00B5EE 7.21%, #FF45A4 45.05%, #FFBA00 78.07%)",
+          "gradient-projects":
+          "linear-gradient(to right, #1E90FF 50%, #FF6347 50%)",
+
+          "gradient-testimonials":
+          "linear-gradient(to bottom, #000000, #353535, #696969, #a3a3a3, #e0e0e0);"
       }),
       fontFamily: {
         playfair: ["Playfair Display", "serif"],

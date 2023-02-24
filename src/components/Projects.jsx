@@ -36,7 +36,7 @@ const Project = ({ title }) => {
 
 const Projects = () => {
   return (
-    <section id="Projects" className="pt-48 pb-48 bg-gradient-rainbow1">
+    <section id="Projects" className="pt-48 pb-48 bg-gradient-projects">
 
       {/* HEADINGS */}
       <motion.div
@@ -51,10 +51,11 @@ const Projects = () => {
       >
         <div>
           <p className="font-playfair font-semibold text-4xl">
-              <span className="text-coral">PRO</span>
+              <span className="text-coral">
+                COL<span className="text-blue">ORS</span></span>
           </p>
           <div className="flex justify-center mt-5">
-              <LineGradient width="w-2/3" />
+              <LineGradient width="w-2/3 bg-coral"/>
           </div>
           <p className="mt-10 mb-10 text-black">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, autem?
@@ -76,8 +77,8 @@ const Projects = () => {
             {/* ROW 1*/}
 
             <div
-            className="flex justify-center text-center items-center p-10 bg-coral
-            max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
+            className="flex justify-center text-center items-center p-10 bg-yellow
+            max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold text-dark-grey"
             >
               BEAUTIFUL USER INTERFACES
             </div>
@@ -95,7 +96,7 @@ const Projects = () => {
             <Project title='Project 6' />
             <Project title='Project 7' />
             <div
-            className="flex justify-center text-center items-center p-10 bg-yellow
+            className="flex justify-center text-center items-center p-10 bg-pink
             max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
             >
               SMOOTH USER EXPERIENCE
