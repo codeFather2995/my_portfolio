@@ -1,11 +1,14 @@
 import useMediaQuery from '../hooks/useMediaQuery';
 import { motion } from 'framer-motion';
 
+
 const About = () => {
+
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
+  
 
   return (
-    <section id='About' className=' bg-gradient-about pt-10 pb-24'>
+    <section id='About' className= 'bg-gradient-about pt-10 pb-24'>
       <div className='md:flex md:justify-between md:gap-16 mt-32 '>
         <motion.div
         className='md:w-1/3'
@@ -30,7 +33,7 @@ const About = () => {
           {isAboveLarge ? (
             <div
             className='relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
-            before:w-full before:h-full before:border-2 before:border-coral before:z-[-1]'
+            before:w-full before:h-full before:border-2 before:border-white before:z-[-1]'
             >
               <img
                className='z-10'
@@ -67,7 +70,7 @@ const About = () => {
                 <div className='z-10'>
                   <p className='font-playfair font-semibold text-5xl'>01</p>
                   <p className='font-playfair font-semibold text-3xl mt-3'>
-                    Constructor
+                    JOB
                   </p>
                 </div>
                 <div className="w-1/2 md:w-3/4 h-32 bg-pink absolute right-0 top-0 z-[-1]" />

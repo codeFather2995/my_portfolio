@@ -22,6 +22,9 @@ module.exports = {
 
         "gradient-about":
           "linear-gradient(to bottom, #ffffff, #e9e9ea, #d4d4d6, #bfbfc2, #aaabae, #949598, #7f7f82, #6b6a6d, #504f51, #373536, #1f1e1e, #000000)",
+          
+          "gradient-rainbow1":
+          "linear-gradient(81.66deg, #00B5EE 7.21%, #FF45A4 45.05%, #FFBA00 78.07%)",
       }),
       fontFamily: {
         playfair: ["Playfair Display", "serif"],

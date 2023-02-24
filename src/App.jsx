@@ -5,8 +5,9 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import About from './components/About';
 import Testimonials from './components/Testimonials';
-import Works from './components/Works';
+import Projects from './components/Projects';
 import Contact from './components/Contact';
+
 
 const App = () => {
   const [selectedPage,setSelectedPage] = useState('Home');
@@ -34,8 +35,8 @@ const App = () => {
         setIsTopOfPage = {setIsTopOfPage} 
       />
       <Home />
-      <About />
-      <Works />
+      <About/>
+      <Projects />
       <Testimonials />
       <Contact />
       <Footer />
