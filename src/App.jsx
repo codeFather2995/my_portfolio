@@ -28,7 +28,7 @@ const App = () => {
 
 
   return (
-    <div id='App' >
+    <div id='App' className='selection:text-pink selection:bg-opaque-black'>
       <Header
         isTopOfPage = {isTopOfPage}
         setIsTopOfPage = {setIsTopOfPage} 

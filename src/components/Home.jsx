@@ -9,14 +9,14 @@ const Home = () => {
   const isAboveLarge = useMediaQuery("(min-width:1060px)");
 
   return (
-    <section id='Home' className='sm:flex sm:justify-between sm:items-center gap-16 sm:h-full py-10' >
+    <section id='Home' className='sm:flex sm:justify-between sm:items-center gap-16 sm:h-full py-10 bg-gradient-rainbow' >
 
       {/* IMAGE SECTION */}
 
       <div className=' basis-3/5 z-10 mt-16 md:mt-32 flex justify-center md:order-2'>
           {isAboveLarge ? (
             <div className=' relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px]
-            before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-coral before:z-[-1] '
+            before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-peach before:z-[-1] '
             >
               <img 
               src="../images/me.png"
@@ -50,13 +50,13 @@ const Home = () => {
                 visible:{opacity:1,x:0},
               }}            
             >
-              <h1 className='text-5xl font-playfair z-10 text-center text-dark-grey'>
+              <h1 className='text-5xl font-playfair z-10 text-center text-white font-bold '>
                 Sargis {' '}
-                <span className=' text-5xl font-playfair font-bold z-20 '>
+                <p className=' text-5xl font-playfair z-20 text-opaque-black'>
                   Petrosyan
-                </span>
+                </p>
               </h1>
-              <p className='mt-10 mb-7 text-center text-coral font-playfair text-2xl'>
+              <p className='mt-10 mb-7 text-center text-opaque-black font-playfair text-2xl'>
                 I'm a 
                 <Typical
                 loop={1}
@@ -86,16 +86,16 @@ const Home = () => {
             }}
             >
                 <Link to='Contact' spy={true} smooth={true} offset={50} duration={500}
-                  className='bg-opaque-black text-deep-blue rounded-sm py-3 px-7 font-semibold
-                    hover:bg-coral hover:text-white transition duration-500 font-playfair cursor-pointer'
+                  className='bg-opaque-black text-deep-blue rounded-sm py-2 px-7 font-semibold
+                    hover:bg-peach hover:text-white transition duration-500 font-playfair cursor-pointer'
                 >
                 Contact Me
                 </Link>
                 <Link to='Contact' spy={true} smooth={true} offset={50} duration={500}
-                  className="rounded-r-sm bg-dark-grey py-0.5 pr-0.5"
+                  className="rounded-sm bg-dark-grey py-0.5 pr-0.5"
                   href="#contact"
                 >
-                  <div className="bg-gradient-rainbow  transition duration-500 w-full h-full flex items-center justify-center
+                  <div className="bg-gradient-rainbow  transition duration-500 hover:text-white w-full h-full flex items-center justify-center
                      px-10 font-playfair text-dark-grey">
                     Let's talk.
                   </div>

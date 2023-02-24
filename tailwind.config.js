@@ -20,8 +20,8 @@ module.exports = {
         "gradient-rainbow":
           "linear-gradient(to right top, #bfbfbf, #cbcbcb, #d7d7d7, #e3e3e3, #efefef, #dfdfe2, #d0cfd4, #c0bfc7, #93919f, #686679, #403e55, #1a1a33 )",
 
-        "gradient-rainblue":
-          "linear-gradient(90deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%)",
+        "gradient-about":
+          "linear-gradient(to bottom, #ffffff, #e9e9ea, #d4d4d6, #bfbfc2, #aaabae, #949598, #7f7f82, #6b6a6d, #504f51, #373536, #1f1e1e, #000000)",
       }),
       fontFamily: {
         playfair: ["Playfair Display", "serif"],

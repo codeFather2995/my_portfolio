@@ -27,13 +27,13 @@ const Header = ({isTopOfPage}) => {
                      <Link to="Home" spy={true} smooth={true} offset={50} duration={500} 
                      className='hover:border-t-2 border-peach transition duration-1000 cursor-pointer'>
                       Home</Link>
-                     <Link to="Home" spy={true} smooth={true} offset={50} duration={500}
+                     <Link to="About" spy={true} smooth={true} offset={50} duration={500}
                       className='hover:border-t-2 border-peach transition duration-1000 cursor-pointer'>
                       About</Link>
-                     <Link to="Home" spy={true} smooth={true} offset={50} duration={500}
+                     <Link to="Works" spy={true} smooth={true} offset={50} duration={500}
                       className='hover:border-t-2 border-peach transition duration-1000 cursor-pointer'>
                       Works</Link>
-                     <Link to="Home" spy={true} smooth={true} offset={50} duration={500}
+                     <Link to="Testimonials" spy={true} smooth={true} offset={50} duration={500}
                       className='hover:border-t-2 border-peach transition duration-1000 cursor-pointer'>
                       Testimonials</Link>
                      <Link to="Contact" spy={true} smooth={true} offset={50} duration={500}
