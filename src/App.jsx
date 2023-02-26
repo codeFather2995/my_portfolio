@@ -1,5 +1,4 @@
 import { useState,useEffect } from 'react';
-import useMediaQuery from './hooks/useMediaQuery';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
@@ -9,10 +8,10 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 
 
+
 const App = () => {
   const [selectedPage,setSelectedPage] = useState('Home');
   const [isTopOfPage,setIsTopOfPage] = useState(true);
-  const isDesktop = useMediaQuery("(min-width: 1060px)");
 
   useEffect(() => {
 
@@ -29,7 +28,7 @@ const App = () => {
 
 
   return (
-    <div id='App' className='selection:text-pink selection:bg-opaque-black'>
+    <div id='App' className='selection:text-white selection:bg-opaque-black'>
       <Header
         isTopOfPage = {isTopOfPage}
         setIsTopOfPage = {setIsTopOfPage} 

@@ -27,7 +27,14 @@ module.exports = {
           "linear-gradient(to right, #1E90FF 50%, #FF6347 50%)",
 
           "gradient-testimonials":
-          "linear-gradient(to bottom, #000000, #353535, #696969, #a3a3a3, #e0e0e0);"
+          "linear-gradient(to bottom, #000000, #353535, #696969, #a3a3a3, #e0e0e0)",
+
+          "gradient-contact":
+          "linear-gradient(to left bottom, #cecece, #d7d7d7, #e0e0e0, #eaeaea, #f3f3f3, #dfdfdf, #cccccc, #b9b9b9, #878787, #585858, #2e2e2e, #000000)",
+          
+          "gradient-footer":
+          " linear-gradient(to left top, #cecece, #d7d7d7, #e0e0e0, #eaeaea, #f3f3f3, #dfdfdf, #cccccc, #b9b9b9, #878787, #585858, #2e2e2e, #000000)",
+
       }),
       fontFamily: {
         playfair: ["Playfair Display", "serif"],

@@ -1,7 +1,7 @@
 import useMediaQuery from '../hooks/useMediaQuery';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
-import Typical, {typical} from 'react-typical'
+import Typical from 'react-typical'
 
 
 
@@ -9,7 +9,7 @@ const Home = () => {
   const isAboveLarge = useMediaQuery("(min-width:1060px)");
 
   return (
-    <section id='Home' className='sm:flex sm:justify-between sm:items-center gap-16 sm:h-full py-10 bg-gradient-rainbow' >
+    <section id='Home' className='md:flex md:justify-between md:items-center gap-16 md:h-full py-10 bg-gradient-rainbow' >
 
       {/* IMAGE SECTION */}
 
@@ -21,7 +21,7 @@ const Home = () => {
               <img 
               src="../images/me.png"
               alt="profile-img"
-              className='w-full max-w-[500px] md:max-w-[500px] rounded-t-[400px]'
+              className='w-full max-w-[400px] md:max-w-[500px] rounded-t-[400px]'
               />
             </div>
           ):(

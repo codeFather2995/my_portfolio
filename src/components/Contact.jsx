@@ -1,4 +1,4 @@
-import LineGradient from '../LineGradient';
+import LineGradient from '../other/LineGradient'
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
 
@@ -18,8 +18,9 @@ const Contact = () => {
   }
 
   return (
-    <section id='Contact' className='py-48'>
+    <section id='Contact' className='py-48 bg-gradient-contact'>
       <motion.div
+      className='flex justify-end w-full'
       initial = 'hidden'
       whileInView='visible'
       viewport={{once: true ,amount: 0.5}}
@@ -30,17 +31,17 @@ const Contact = () => {
       }}
       >
         <div>
-            <p className='font-playfair font-semibold text-4xl  text-black'>
-              <span className='text-yellow'>CONTACT ME</span> TO GET STARTED
+            <p className='font-playfair font-semibold text-4xl  text-white'>
+              <span className='text-dark-grey'>CONTACT ME</span> TO GET STARTED
             </p>
             <div className='flex md:justify-end my-5'>
-              <LineGradient width='mx-auto w-2/4 bg-red' />
+              <LineGradient width='w-1/2 bg-dark-grey' />
             </div>
         </div>
       </motion.div>
 
       {/* FORM IMAGE */}
-        <div className='md:flex md:justify-between gap-16 mt-5'>
+        <div className='md:flex md:justify-between gap-10 mt-5'>
           <motion.div
             className='basis-1/2 flex justify-center'
             initial = 'hidden'
@@ -72,7 +73,8 @@ const Contact = () => {
               method='POST'
             >
                 <input
-                  className='w-full bg-yellow font-semibold placeholder-slate-400 p-3'
+                  className='w-[90%] bg-grey font-semibold placeholder-dark-grey p-3
+                  focus:outline-none focus:ring focus:ring-violet-300 text-deep-blue'
                   type="text"
                   placeholder='NAME'
                   {...register("name", {
@@ -81,14 +83,15 @@ const Contact = () => {
                   })}
                 />
                 {errors.name && (
-                  <p className='text-black mt-1'>
-                    {errors.name.type === 'required' && 'this field is required.'}
+                  <p className='text-red-900 mt-1'>
+                    {errors.name.type === 'required' && '*This field is required.'}
                     {errors.name.type === 'maxLength' && "Max length is 100 char."}
                   </p>
                 )}
 
                 <input
-                  className='w-full bg-yellow font-semibold placeholder-slate-400 p-3 mt-5'
+                  className='w-[90%] bg-grey font-semibold placeholder-dark-grey p-3 mt-5
+                  focus:outline-none focus:ring focus:ring-violet-300 text-deep-blue'
                   type="text"
                   placeholder='EMAIL'
                   {...register("email", {
@@ -97,34 +100,36 @@ const Contact = () => {
                   })}
                 />
                   {errors.email && (
-                  <p className='text-black mt-1'>
-                    {errors.email.type === 'required' && 'this field is required.'}
+                  <p className='text-red-900 mt-1'>
+                    {errors.email.type === 'required' && '*This field is required.'}
                     {errors.email.type === 'pattern' && "Invalid email address."}
                   </p>
                 )}
 
                  <textarea
-                  className='w-full bg-yellow font-semibold placeholder-slate-400 p-3 mt-5'
+                  className='w-[90%] bg-grey font-semibold placeholder-dark-grey p-3 mt-5 
+                      resize-none focus:outline-none focus:ring focus:ring-violet-300 text-deep-blue'
                   type="text"
                   placeholder='MESSAGE'
                   rows='4'
                   cols='50'
+                  
                   {...register("message", {
                     required:true,
                     maxLength:2000
                   })}
                   />
                     {errors.email && (
-                      <p className='text-black mt-1'>
-                        {errors.message.type === 'required' && 'this field is required.'}
-                        {errors.message.type === 'maxLength' && "Maxlength is 2000 char."}
+                      <p className='text-red-900 mt-1 '>
+                        {errors.message.type === 'required' && '*This field is required.'}
+                        {errors.message.type === 'maxLength' && "*Maxlength is 2000 char."}
                       </p>
                     )}
 
                     <button
                     type='submit'
-                    className='p-5 bg-yellow font-semibold text-dark-grey mt-5 hover:bg-pink
-                        hover:text-white transition duration-500'
+                    className='p-5 bg-dark-grey font-semibold text-white mt-5 hover:bg-grey
+                        hover:text-dark-grey transition duration-500 border-[1px] border-inherit '
                     >
                       SEND ME A MESSAGE
                     </button>
