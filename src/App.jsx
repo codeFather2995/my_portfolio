@@ -29,10 +29,7 @@ const App = () => {
 
   return (
     <div id='App' className='selection:text-white selection:bg-opaque-black'>
-      <Header
-        isTopOfPage = {isTopOfPage}
-        setIsTopOfPage = {setIsTopOfPage} 
-      />
+      <Header isTopOfPage = {isTopOfPage}/>
       <Home />
       <About/>
       <Projects />

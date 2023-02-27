@@ -2,7 +2,7 @@ import useMediaQuery from '../hooks/useMediaQuery';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 import Typical from 'react-typical'
-
+import SocialMediaIcons from '../other/SocialMediaIcons';
 
 
 const Home = () => {
@@ -61,11 +61,13 @@ const Home = () => {
                 <Typical
                 loop={1}
                 steps={[
-                  'developer',
+                  'Ambitious',
                   3000,
-                  'milioner',
+                  'Knowledge-seeker',
                   3000,
-                  'Human',
+                  'Robust',
+                  3000,
+                  'Tenacious',
                   3000
                 ]} 
                 />
@@ -87,7 +89,7 @@ const Home = () => {
             >
                 <Link to='Contact' spy={true} smooth={true} offset={50} duration={500}
                   className='bg-opaque-black text-deep-blue rounded-sm py-2 px-7 font-semibold
-                    hover:bg-peach hover:text-white transition duration-500 font-playfair cursor-pointer'
+                    hover:bg-white hover:text-opaque-black transition duration-500 font-playfair cursor-pointer'
                 >
                 Contact Me
                 </Link>
@@ -95,13 +97,28 @@ const Home = () => {
                   className="rounded-sm bg-dark-grey py-0.5 pr-0.5"
                   href="#contact"
                 >
-                  <div className="bg-gradient-rainbow  transition duration-500 hover:text-white w-full h-full flex items-center justify-center
+                  <div className="bg-gradient-rainbow transition duration-500 hover:text-white w-full h-full flex items-center justify-center
                      px-10 font-playfair text-dark-grey">
                     Let's talk.
                   </div>
                 </Link>
             </motion.div>
 
+            {/* SOCIAL MEDIA */}
+
+            <motion.div
+              className="flex mt-5 justify-center"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0.5 }}
+                transition={{ delay: 0.4, duration: 0.5 }}
+                variants={{
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+            >
+               <SocialMediaIcons />
+            </motion.div>
       </div>
 
     </section>
