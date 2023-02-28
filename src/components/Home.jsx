@@ -25,7 +25,7 @@ const Home = () => {
             </div>
           ):(
             <img 
-            src="../images/me.png"
+            src="/images/me.png"
             alt="profile-img"
             className='w-full max-w-[500px] md:max-w-[500px] rounded-t-[400px]'
             />
