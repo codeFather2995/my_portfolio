@@ -25,8 +25,7 @@ const Project = ({ title }) => {
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
         <p className="mt-7">
-          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla
-          porttitor accumsan tincidunt.
+          Soon
         </p>
       </div>
       <img src={`./images/${projectTitle}.jpeg`} alt={projectTitle} />
@@ -57,8 +56,11 @@ const Projects = () => {
           <div className="flex justify-center mt-5">
               <LineGradient width="w-2/3 bg-coral"/>
           </div>
-          <p className="mt-10 mb-10 text-black">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, autem?
+          <p className="mt-10 mb-10 text-white text-xl font-opensans ">
+              "I apologize that I am currently unable to showcase my projects, as they are not yet ready for 
+            public viewing. I do not wish to display simple projects like to-do lists. However, I am actively 
+            working on my projects and plan to share them here and on my GitHub account as soon as they are ready 
+            for public access."
           </p>
         </div>
       </motion.div>
@@ -87,14 +89,14 @@ const Projects = () => {
 
             {/* ROW 2 */}
 
-            <Project title='Project 3' />
-            <Project title='Project 4' />
-            <Project title='Project 5' />
+            {/* <Project title='Project' />
+            <Project title='Project' />
+            <Project title='Project' /> */}
 
             {/* ROW 3 */}
 
-            <Project title='Project 6' />
-            <Project title='Project 7' />
+            <Project title='Project 3' />
+            <Project title='Project 4' />
             <div
             className="flex justify-center text-center items-center p-10 bg-pink
             max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"

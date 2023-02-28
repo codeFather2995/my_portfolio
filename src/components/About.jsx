@@ -64,7 +64,7 @@ const About = () => {
             {/* JOB */}
 
             <motion.div
-            className='md:w-1/4 mt-10 md:ml-5'
+            className='md:w-1/4 mt-10 ml-2'
             initial="hidden"
             whileInView='visible'
             viewport={{once:true,amount:0.5}}
@@ -80,7 +80,7 @@ const About = () => {
                   </p>
               </div>
                   <ButtonMotion
-                  text=" For the past 6 years, I've been managing construction projects with a keen eye for detail and a relentless pursuit of excellence. With almost 40 employees
+                  text=" For the past 6 years, I've been managing construction projects with a keen eye for detail and a relentless pursuit of excellence(QaghArd LLC). With almost 40 employees
                     under my guidance, I've developed a reputation as a skilled and respected leader in the industry.
                     From the moment I step on the job site, I work tirelessly to ensure that every aspect of the project is executed
                     with precision and care.I'm always the first to arrive and the last to leave, leading by example and motivating my team to deliver their best work.
@@ -95,7 +95,7 @@ const About = () => {
             {/* WAR */}
 
             <motion.div
-            className='md:w-1/4 mt-10'
+            className='md:w-1/4 mt-10 ml-2'
             initial= 'hidden'
             whileInView='visible'
             viewport={{once:true,amount:0.5}}
@@ -125,7 +125,7 @@ const About = () => {
             {/* PROGRAMMING */}
 
             <motion.div
-            className='md:w-1/4 mt-10'
+            className='md:w-1/4 mt-10 ml-2'
             initial="hidden"
             whileInView='visible'
             viewport={{once:true,amount:0.5}}
@@ -136,7 +136,7 @@ const About = () => {
             }}
             >
               <div>
-                  <p className='font-playfair font-semibold text-3xl mb-2'>
+                  <p className='font-playfair font-semibold text-3xl mb-2 '>
                     Programming
                   </p>
               </div>
@@ -159,7 +159,7 @@ const About = () => {
             {/* EDUCATION */}
 
             <motion.div
-            className='md:w-1/4 mt-10'
+            className='md:w-1/4 mt-10 ml-2'
             initial="hidden"
             whileInView='visible'
             viewport={{once:true,amount:0.5}}
@@ -175,14 +175,16 @@ const About = () => {
                   </p>
               </div>
                 <ButtonMotion
-                  text="I studied at the Armenian State University of Economics in Yerevan, Armenia, hoping to graduate 
-                  with a degree in Marketing. However, I soon realized that it wasn't the right profession for me, even 
-                  though I excelled in it. I wasn't happy with the teaching methods, and it felt like I wasn't learning 
-                  the things that mattered the most.So, I decided to take a break from it and explore other fields. Currently, 
-                  I'm teaching myself how to become a JavaScript developer, and I'm really enjoying it. It's challenging and 
-                  rewarding, and every day I learn something new, which is very exciting.Who knows, maybe in the future, I'll pursue
-                  a degree in computer science or another related field,the possibilities are endless. I love the feeling of learning and growing, and I'm excited 
-                  to see where this journey takes me."/>
+                  text="I studied at the Armenian State University of Economics in Yerevan, Armenia, 
+                  with the hope of graduating with a degree in Marketing. However, I soon realized that 
+                  it wasn't the right profession for me, despite excelling in it. I wasn't satisfied with the
+                  teaching methods, and it felt like I wasn't learning the things that mattered most.
+                  Therefore, I decided to take a break from it and explore other fields. Currently, I am attending
+                  courses in JavaScript at the G.I.T.C, where I receive lessons from Hayk Abelyan. In addition to the courses, 
+                  I'm constantly searching for more information on the internet and engaging in self-study to enhance my knowledge.
+                  I find JavaScript development challenging and rewarding, and every day, I learn something new, which is exciting. 
+                  The possibilities are endless, and who knows, maybe in the future, I'll pursue a degree in computer science or another 
+                  related field. I love the feeling of learning and growing, and I'm excited to see where this journey takes me."/>
               </motion.div>
       </div>
     </section>

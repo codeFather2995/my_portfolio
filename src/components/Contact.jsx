@@ -31,7 +31,7 @@ const Contact = () => {
       }}
       >
         <div>
-            <p className='font-playfair font-semibold text-4xl  text-white'>
+            <p className='font-playfair font-semibold text-4xl  text-white mr-5'>
               <span className='text-dark-grey'>CONTACT ME</span> TO GET STARTED
             </p>
             <div className='flex md:justify-end my-5'>
