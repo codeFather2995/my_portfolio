@@ -18,7 +18,7 @@ const Home = () => {
             before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-peach before:z-[-1] '
             >
               <img 
-              src="../images/me.png"
+              src="/images/me.png"
               alt="profile-img"
               className='w-full max-w-[400px] md:max-w-[500px] rounded-t-[400px]'
               />
