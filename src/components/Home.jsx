@@ -73,13 +73,13 @@ const Home = () => {
               visible:{opacity:1,x:0},
             }}
             >
-                <Link to='Contact' spy={true} smooth={true} offset={50} duration={500}
+                <Link to='Contact' spy={true} smooth={true} offset={50} duration={1000}
                   className='bg-opaque-black text-deep-blue rounded-sm py-2 px-7 font-semibold
                     hover:bg-white hover:text-opaque-black transition duration-500 font-playfair cursor-pointer'
                 >
                 Contact Me
                 </Link>
-                <Link to='Contact' spy={true} smooth={true} offset={50} duration={500}
+                <Link to='Contact' spy={true} smooth={true} offset={50} duration={1000}
                   className="rounded-sm bg-dark-grey py-0.5 pr-0.5"
                   href="#contact"
                 >
