@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import BackDrop from "./BackDrop";
-import Typical from 'react-typical'
+
 
 
 const dropIn = {
@@ -39,13 +39,7 @@ const Modal = ({handleClose,text}) => {
           exit="exit"
         > 
           <p className="font-opensans">
-            <Typical
-            loop={1}
-            steps= {[
-              text,
-              5000
-            ]}
-             />
+            {text}
           </p>
           <button onClick={handleClose} 
             className='absolute bottom-[-35px] right-0 py-1 px-3 bg-opaque-black hover:bg-sky-900/50

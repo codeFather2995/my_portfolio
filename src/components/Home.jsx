@@ -1,7 +1,6 @@
 import useMediaQuery from '../hooks/useMediaQuery';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
-import Typical from 'react-typical'
 import SocialMediaIcons from '../other/SocialMediaIcons';
 
 
@@ -57,20 +56,7 @@ const Home = () => {
                 </p>
               </h1>
               <p className='mt-10 mb-7 text-center text-opaque-black font-playfair text-2xl'>
-                I'm a 
-                <Typical
-                loop={1}
-                steps={[
-                  'Ambitious',
-                  3000,
-                  'Knowledge-seeker',
-                  3000,
-                  'Robust',
-                  3000,
-                  'Tenacious',
-                  3000
-                ]} 
-                />
+                I'm a developer 
               </p>
             </motion.div>
 
