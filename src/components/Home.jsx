@@ -4,6 +4,7 @@ import { Link } from 'react-scroll';
 import SocialMediaIcons from '../other/SocialMediaIcons';
 
 
+
 const Home = () => {
   const isAboveLarge = useMediaQuery("(min-width:1060px)");
 
@@ -18,14 +19,14 @@ const Home = () => {
             before:w-full before:max-w-[400px] md:before:max-w-[600px] before:h-full before:border-2 before:border-peach before:z-[-1] '
             >
               <img 
-              src ="https://scontent.fevn6-5.fna.fbcdn.net/v/t39.30808-6/334389817_602478811929437_377737103592409594_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=U7TiTlN_qN4AX-LFKH5&_nc_ht=scontent.fevn6-5.fna&oh=00_AfCAcVdTwj6OpMyshsKmFaLcd3IXfMLtBlzoHUngWdwTVQ&oe=6404F779" 
+              src ="https://scontent.fevn6-3.fna.fbcdn.net/v/t39.30808-6/334389817_602478811929437_377737103592409594_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=8eTKdrm0vhIAX8BwU_k&_nc_ht=scontent.fevn6-3.fna&oh=00_AfB_CgaieTANWyrRDbTRSc9KV11UWnGHw7cqpzQm5Iy2OQ&oe=6410D4F9" 
               alt="profile-img"
               className='w-full max-w-[400px] md:max-w-[500px] rounded-t-[400px]'
               />
             </div>
           ):(
             <img 
-            src ="https://scontent.fevn6-5.fna.fbcdn.net/v/t39.30808-6/334389817_602478811929437_377737103592409594_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=U7TiTlN_qN4AX-LFKH5&_nc_ht=scontent.fevn6-5.fna&oh=00_AfCAcVdTwj6OpMyshsKmFaLcd3IXfMLtBlzoHUngWdwTVQ&oe=6404F779" 
+            src ="https://scontent.fevn6-3.fna.fbcdn.net/v/t39.30808-6/334389817_602478811929437_377737103592409594_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=730e14&_nc_ohc=8eTKdrm0vhIAX8BwU_k&_nc_ht=scontent.fevn6-3.fna&oh=00_AfB_CgaieTANWyrRDbTRSc9KV11UWnGHw7cqpzQm5Iy2OQ&oe=6410D4F9" 
             alt="profile-img"
             className='w-full max-w-[500px] md:max-w-[500px] rounded-t-[400px]'
             />

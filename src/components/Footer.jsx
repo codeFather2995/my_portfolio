@@ -10,7 +10,7 @@ const Footer = () => {
               Sargis Petrosyan
           </p>
           <p className='font-playfair text-md text-deep-blue'>
-            ©2022 PS. All Rights Reserved.
+            ©2023 PS. All Rights Reserved.
           </p>
         </div>
       </div>
